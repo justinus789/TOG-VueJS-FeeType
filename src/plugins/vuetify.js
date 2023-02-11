@@ -12,6 +12,7 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import SignOutIcon from '@/Icon/SignOut.vue'
 import ChangePasswordIcon from '@/Icon/ChangePasswordIcon.vue'
+import MasterDataManagementIcon from '@/Icon/MasterDataManagementIcon.vue'
 
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
@@ -29,6 +30,7 @@ export default createVuetify({
     aliases: {
       changePassword: ChangePasswordIcon,
       signOut: SignOutIcon,
+      masterDataManagement: MasterDataManagementIcon,
     },
   },
 })

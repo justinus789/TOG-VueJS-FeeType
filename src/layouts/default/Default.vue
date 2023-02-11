@@ -6,7 +6,7 @@
       <default-bar />
     </div>
 
-    <default-view />
+    <default-view class="my-8 mx-2" />
   </v-app>
 </template>
 

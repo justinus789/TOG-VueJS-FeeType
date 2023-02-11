@@ -50,9 +50,8 @@
   </v-app-bar>
 </template>
 
-<script setup>
-// import '@/assets/svg/logout.svg' as logoutIcon;
-  //
+<script>
+//
 </script>
 
 <style scoped>
