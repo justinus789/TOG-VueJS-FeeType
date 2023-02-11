@@ -114,6 +114,23 @@ export const store = reactive({
   deleteMultipleItem(selectedItem) {
     this.feeTypeList = this.feeTypeList.filter(item => !selectedItem.some(selItem => selItem.code === item.code))
   },
+  createItem(item) {
+    this.feeTypeList.push({
+        code: parseInt(item.code),
+        name: item.name,
+        description: item.description,
+        status: item.status,
+    })
+  },
+  updateItem(item) {
+    this.feeTypeList.forEach(el => {
+        if(el.code === parseInt(item.code)){
+            el.code = item.code
+            el.name = item.name
+            el.description = item.description
+        }
+    })
+  },
   deleteItem(index) {
     this.feeTypeList.splice(index,1)
   },
